@@ -1,0 +1,980 @@
+/*
+
+
+*/
+
+@charset 'UTF-8';
+@font-face{font-family:'FontAwesome';src:url('font/fontawesome-webfont.eot?v=4.0.1');src:url('font/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('font/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+			body {
+				display: block;
+				margin: 0px;
+				padding: 0px;
+				background: #ffffff;
+				font-family: 'Lato', sans-serif;
+				font-size: 12pt;
+				font-weight: 300;
+				color: #333;
+				width: 100%;
+			}
+
+			h1, h2, h3 {
+				margin: 0px;
+				padding: 0px;
+				font-weight: 300;
+			}
+
+			p {
+				line-height: 180%;
+			}
+
+			ul{
+				text-decoration: none;
+				list-style-type:none;
+			}
+
+			a {
+				text-decoration: none;
+				color: #D1551F;
+			}
+
+
+			strong {
+				font-weight: 700;
+				color: #2A2A2A;
+			}
+
+
+main{ 
+	padding-top: 40px;
+	width: 92%;
+	max-width: 710px;
+	margin: 0 auto;
+
+}
+article {
+
+}
+article h2{
+	font-weight: 600;
+	color: #6f1200;
+	border-bottom: 1px solid #6f1200;
+	height: 25px;
+}
+article h3{
+	font-weight: 400;
+}
+main a{
+	font-weight: 600;
+	color: #6f1200;
+	font-size: 18px;
+}
+main a:hover{
+	font-weight: 600;
+	color: #6f1200;
+	text-decoration: underline;
+}
+.hight280{
+	height: 280px;
+	overflow: auto;
+}
+
+.btn-link {
+	padding-left: 30px;
+	width: 230px;
+	background-color: #6f1200;
+	border-radius: 2px;
+	border: 0.5px solid rgb(171, 69, 20);
+	color: #f6f6f6;
+}
+.btn-link a {
+	color: #f6f6f6;
+}
+.btn-link a:hover{
+	color: #f6f6f6;
+	text-decoration: underline;
+}
+
+/*
+	/////////////////////////	FORMS   ////////////////////////////
+*/
+form{
+	width: 92%;
+	max-width: 710px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+form h2{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.input-group{
+
+}
+#message{
+	margin: 15px;
+}
+.hiddenMSG{
+	display: none;
+}
+#MSG{
+	margin: 15px;
+}
+
+form label{
+	margin-right: 60%;
+	font-size: 20px;
+}
+.width-label label{
+	margin-right: 50%;
+}
+.width-label2 label{
+	margin-right: 30%;
+	margin-top: 20px;
+}
+.input-bday input{
+	width: 40%;
+	margin-left: 30%;
+}
+
+form input{
+	border: none;
+	border-bottom: 0.5px solid #6b6b6b;
+	margin-top: 6px;
+	margin-bottom: 10px;
+	width: 98%;
+	height: 25px;
+	font-size: 18px;
+}
+
+form input:focus{
+	-moz-box-shadow: 0 0 8px #6f1200ba;
+	-webkit-box-shadow: 0 0 8px #6f1200ba;
+	box-shadow: 0 0 8px #6f1200ba;
+	border: none;
+}
+form input::placeholder{
+	font-size: 18px;
+	color: #6f1200ba;
+}
+
+form input:-ms-input-placeholder{
+	font-size: 18px;
+	color: #6f1200ba;
+}
+form input::-ms-input-placeholder{
+	font-size: 18px;
+	color: #6f1200ba;
+}
+
+form .fulln{
+	width: 48.5%;
+}
+
+form .horg input{
+	width: 10%;
+	-moz-box-shadow: 0 0 0px #fff;
+	-webkit-box-shadow: 0 0 0px #fff;
+	box-shadow: 0 0 0px #fff;
+	border: none;
+}
+#meatm{
+	width: 100%;
+	margin:0;
+}
+.hidden{
+	display: none;
+}
+form .horg #meatm .show {
+	display: block;
+	border: none;
+	border-bottom: 0.5px solid #6b6b6b;
+	margin-top: 6px;
+	margin-bottom: 10px;
+	width: 98%;
+	height: 25px;
+	font-size: 18px;
+}
+#otherm{
+	width: 100%;
+	margin:0;
+}
+
+form .horg #otherm .show {
+	display: block;
+	border: none;
+	border-bottom: 0.5px solid #6b6b6b;
+	margin-top: 6px;
+	margin-bottom: 10px;
+	width: 98%;
+	height: 25px;
+	font-size: 18px;
+}
+form .horg #between {
+	height: 41px;
+	float: right;
+	width: 88%;
+	margin: 0;
+}
+form .horg #at {
+	height: 41px;
+	float: right;
+	width: 88%;
+	margin: 0;
+}
+
+form .horg .border-bot{
+		border-bottom: 0.5px solid #6b6b6b;
+}
+
+.loginlink{
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+.reg_btn{
+	font-size: 18px;
+	height: 40px;
+	width:98%;
+	border: none;
+	padding: 8px 15px 8px 15px;
+	background: #6f1200;
+	color: #fff;
+	box-shadow: 1px 1px 4px #DADADA;
+	-moz-box-shadow: 1px 1px 4px #DADADA;
+	-webkit-box-shadow: 1px 1px 4px #DADADA;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.reg_btn:hover{
+
+}
+.upload_btn{
+	margin-bottom: 20px;
+	font-size: 18px;
+	height: 40px;
+	width:98%;
+	border: none;
+	padding: 8px 15px 8px 15px;
+	background: #6f1200;
+	color: #fff;
+	box-shadow: 1px 1px 4px #DADADA;
+	-moz-box-shadow: 1px 1px 4px #DADADA;
+	-webkit-box-shadow: 1px 1px 4px #DADADA;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+.button{
+	margin-bottom: 50px;
+}
+
+.img-next{
+	margin-top: 50px;
+}
+#ccard label{
+	width: 80%;
+	margin-right: 20%;
+}
+#ccard{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+#ccard input{
+	width: 25px;
+	margin: 0 28px;
+	margin-top: 10px;
+}
+#no-margin-form{
+	margin: 15px auto;
+
+}
+
+/*
+	/////////////////////////	SEARCH   ////////////////////////////
+*/
+
+.list{
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid #a7a4a4d6;
+	min-height: 300px;
+	margin-bottom: 30px;
+
+}
+.lisst {
+	min-height: 300px;
+	padding: 10px 10px;
+	padding-bottom: 40px;
+}
+.list:hover{
+-webkit-box-shadow: 4px 4px 8px 0px rgba(94,94,94,1);
+-moz-box-shadow: 4px 4px 8px 0px rgba(94,94,94,1);
+box-shadow: 4px 4px 8px 0px rgba(94,94,94,1);
+}
+.list-pad{
+	padding: 10px;
+}
+.lisst p {
+	font-weight: 400;
+	margin: 0;
+}
+.list-item {
+	height: 30px;
+	padding: 5px 0px;
+}
+.list-item p{
+	float: left;
+	margin: 0;
+	margin-right: 10px;
+}
+.list-date {
+	height: 50px;
+	width: 120px;
+	float: left;
+}
+.list-items{
+	height: 50px;
+	width: 25%;
+	float: left;
+}
+.list-item50{
+	width: 48%;
+	float: left;
+}
+
+.list-date h3{
+	font-size: 16px;
+	font-weight: 400;
+	color: #6f1200;
+}
+.list-items h3{
+	font-size: 16px;
+	font-weight: 400;
+	color: #6f1200;
+}
+.list-item50 h3{
+	font-size: 16px;
+	font-weight: 400;
+	color: #6f1200;
+}
+.list-message{
+	width: 100%;
+	float: left;
+}
+.list-message h3{
+	font-size: 16px;
+	font-weight: 400;
+	color: #6f1200;
+}
+.list-message input{
+	width: 100%;
+}
+
+.accordion {
+	z-index: 1;
+  background-color: white;
+  color: rgb(55,62,77);
+  cursor: pointer;
+  padding: 15px 10px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  transition: 0.4s;
+
+}
+
+.accordion img{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+
+}
+
+.accordion:hover {
+  background-color: #f2f2f2; 
+}
+
+.profile-left {
+	font-size: 14px;
+	text-align: left;
+	padding-bottom: 5px;
+	width: 75%;
+	float: right;
+}
+.name{
+	font-size: 22px;
+	color: #6f1200;
+	padding-bottom: 5px;
+	width: 100%;
+	}	
+.li30{
+	padding-bottom: 5px;
+	width: 30%;
+	float: left;
+}
+.li50{
+	padding-bottom: 5px;
+	width: 50%;
+	float: left;
+}
+.li100{
+	padding-bottom: 5px;
+	width: 100%;
+	float: left;
+}
+.main-list form{
+	max-width: 80%;
+
+}
+/*
+	/////////////////////////	Profile lelejka  ////////////////////////////
+*/
+.profile-main{
+
+}
+.profile-user{
+}
+.profile{
+	width: 88%;
+	max-width: 600px;
+	margin:0 auto;
+}
+.profile-main .profile{
+	padding-top: 110px;
+	
+}
+.profile-main .profile .user img{
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+}
+.profile-main .profile .profile-left {
+	padding-top: 25px;
+	font-weight: 400;
+	font-size: 16px;
+	text-align: left;
+	padding-bottom: 5px;
+	float: right;
+}
+.user .rep-butt {
+	padding: 3px 8px;
+	border-radius: 4px;
+	margin-left: 10px;
+	transition: 0.5s;
+}
+.user .rep-butt:hover{
+	background-color: #6f1200;
+	color: white; 
+}
+.rep-menu{
+	margin-top: 10px;
+	position: absolute;
+	display: none;
+	height: 0px;
+	background-color: white;
+	overflow: hidden;
+	-moz-transition: height 0.4s ease-in-out;
+	-webkit-transition: height 0.4s ease-in-out;
+	-o-transition: height 0.4s ease-in-out;
+	-ms-transition: height 0.4s ease-in-out;
+	transition: height 0.4s ease-in-out;
+	-webkit-box-shadow: 0px 10px 10px -1px rgba(87, 97, 100, 0.35);
+-moz-box-shadow: 0px 10px 10px -1px rgba(87, 97, 100, 0.35);
+box-shadow: 0px 10px 10px -1px rgba(87, 97, 100, 0.35);
+}
+ .li1 a{
+ 	padding: 10px 15px;
+ 	font-size: 16px;
+	color: #666666;
+	font-weight: 600;
+}
+ .li1 a:hover{
+	color: #6f1200;
+}
+.rep-active{
+	display: block;
+	height: 65px;
+}
+.rep-active .li1 a{
+
+}
+
+
+.profile-about{
+	padding: 30px;
+}
+.about{
+	color: #6f1200;
+	min-height: 370px;
+	font-weight: 400;
+	padding: 20px 10px;
+}
+.about .li100{
+	border-bottom: 1px solid #6f1200ba;
+	padding: 10px 5px;
+}
+.about .li100-blue{
+	color: blue;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-left: 10px;	
+	padding-bottom: 10px;
+	margin-top: 10px;
+}
+.about .li100-yelow{
+	color: #f7cd00;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+}
+.about .li100-red{
+	color: red;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+.about .li100-green{
+	color: green;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+.profile-text{
+	color: #333;
+}
+.profile-galery{
+	padding:20px 10px;
+}
+.black .profile-about{
+	background-color: #ffffff;
+	color: #333;
+	font-weight: 600;
+}
+.black .profile-about .profile-text{
+	color: #333;
+}
+.user{
+	padding-bottom: 15px;
+}
+.black .profile-about main{
+	padding: 0;
+}
+.profile-galery main{
+	padding: 0;
+
+}
+.profile-user h2{
+		font-weight: 600;
+}
+.profile-galery .about{
+	border-top: 1px solid #6f1200;
+	min-height: 50px;
+}
+.profile-galery img{
+	padding: 5px; 
+	border-radius: 3px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.profile-galery img:hover{
+}
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+
+
+.btn-del{
+	position: absolute;
+	font-size: 14px;
+	height: 30px;
+	width: 70px;
+	border: none;
+	padding: 8px 8px 8px 8px;
+	background: #6f1200;
+	color: #fff;
+	box-shadow: 1px 1px 4px #DADADA;
+	-moz-box-shadow: 1px 1px 4px #DADADA;
+	-webkit-box-shadow: 1px 1px 4px #DADADA;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.btn-edit{
+	margin-left: 10px;
+	font-size: 14px;
+	height: 30px;
+	width: 70px;
+	border: none;
+	padding: 8px 8px 8px 8px;
+	background: #6f1200;
+	color: #fff;
+	box-shadow: 1px 1px 4px #DADADA;
+	-moz-box-shadow: 1px 1px 4px #DADADA;
+	-webkit-box-shadow: 1px 1px 4px #DADADA;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	float: right;
+}
+.btn-sm{
+	margin-top: -15px;
+	margin-left: 10px;
+	font-size: 14px;
+	height: 30px;
+	width: 250px;
+	border: none;
+	padding: 8px 8px 8px 8px;
+	background: #6f1200;
+	color: #fff;
+	box-shadow: 1px 1px 4px #DADADA;
+	-moz-box-shadow: 1px 1px 4px #DADADA;
+	-webkit-box-shadow: 1px 1px 4px #DADADA;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	float: right;
+}
+.inbox-text{
+	color: #333;
+	background-color: #ececec;
+	padding: 15px 10px;
+}
+
+ /* The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+.StripeElement {
+  box-sizing: border-box;
+
+  height: 40px;
+
+  padding: 10px 12px;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+/* CHATT */
+.closeTab{
+  position: absolute;
+  z-index: 10;
+  color: #aaaaaa;
+  font-size: 22px;
+}
+.chat_tab_x{
+	margin: 0;
+}
+.chat_tab_name{
+	width: 110px;
+	padding-top: 5px;
+	padding-left: 10px;
+	float: left;
+}
+.OpenTabButton .chat_tab_name{
+	width: 180px;
+}
+.modal_chat_tabb{
+	border-radius: 8px 8px 0px 0px;
+	background-color: white;
+	display: none;
+	margin-right: 30px;
+}
+.chat_0{
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+	z-index: 9;
+}
+.tab_250{
+	position: fixed;
+	bottom: 0;
+	right: 200px;
+	z-index: 9;
+}
+.chat_button{
+	border-radius: 6px 6px 0px 0px;
+	background-color: white;
+	border: none;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, .1);
+	cursor:pointer;
+	padding: 5px 10px;
+	width: 170px;
+	height: 30px;
+	transition: background-color 0.4s;
+	z-index: 9;
+}
+.chat_button:hover{
+	background-color: #e9ebee;
+}
+.chat-content{
+	display: none; /* Hidden by default */
+}
+.OpenTab{
+	display: block;
+	width: 260px;
+	height: 300px;
+}
+.tab_box{
+	border-radius: 8px 8px 0px 0px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+}
+.OpenTabButton{
+	height: 40px;
+	padding: 5px 20px;
+	bottom: 360px;
+	width: 260px;	
+}
+.OpenChat{
+	display: block;
+	width: 200px;
+	min-height: 100px;
+	padding-bottom: 50px;
+	max-height: 300px;
+}
+.OpenChatButton{
+height: 40px;
+padding: 5px 20px;
+width: 200px;
+}
+#message_display{
+	max-height: 220px;
+	min-height: 220px;
+	height: 220px;
+	width: 260px;
+	overflow: auto;
+}
+#tab_form{
+	background-color: white;
+	margin: 0;
+	height: 75px;
+	width: 260px;
+	bottom: 0;
+	margin-top: 5px;
+}
+.chat_tab_input{
+	color: #1d2129;
+	border: none;
+	border-top: 1px solid #c9d0da;
+	font-size: 14px;
+	outline: none;
+	margin:0;
+	width: 242px;
+	max-width: 242px;
+	height: 38px;
+	overflow: auto;
+	padding: 4px 8px;
+	resize: none;
+}
+.chat_tab_input:focus{
+	border: none;
+	border-top: 1px solid #c9d0da;
+
+}
+.message_view {
+	padding: 8px 5px;
+}
+.mess_top{
+	height: 10px;
+}
+.msg_right{
+	float: right;
+	text-align: right;
+}
+.msg_right img{
+	visibility: hidden;
+}
+.msg_left img{
+	border: 50%;
+}
+.single_message{
+	width: 90%;
+}
+.message_holder {
+	border-radius: 4px 20px 20px 4px;
+	margin: 0.5px 5px;
+	background-color: #e9ebee;
+	font-size: 14px;
+	padding: 8px 10px;
+	display: inline-block;
+}
+.msg_right .message_holder{
+	border-radius: 20px 4px 4px 20px;
+	background-color: #6f1200;
+	color: white;
+}
+.bg_white{
+	background-color: white;
+}
+/*
+	/////////////////////////	SEARCH   ////////////////////////////
+*/
+.index-wrap{
+	padding-top: 80px;
+}
+
+
+
+
+
+
+
+
+/*
+	/////////////////////////	Footer   ////////////////////////////
+*/
+
+footer{
+	overflow: hidden;
+	padding-top: 15px;
+	height: 220px;
+	margin-top: 25px;
+	background-color: #060807;
+	width: 100%;
+	text-align: center;
+	font-weight: 600;
+}
+footer .footer-center {
+	width: 90%;
+	margin: 0 auto;
+}
+footer div div{
+	width: 33%;
+	float: left;
+}
+footer div h2{
+	color: #f6f6f6;
+}
+footer div div a{
+	font-weight: 400;
+	font-size: 16px;
+	color: #f6f6f6;
+	display: block;
+	float: none;
+}
+footer div div a:hover{
+	color:#f15900; 
+}
+footer .links1{
+	font-weight: 300;
+	font-size: 16px;
+	color: #f6f6f6;
+}
+footer .links1 h2{
+	width: 180px;
+	font-weight: 400;
+	font-size: 22px;
+	background-color: #6f1200;
+	border-radius: 2px;
+	border: 0.5px solid rgb(171, 69, 20);
+	color: #f6f6f6;
+	margin: 0 auto;
+}
+footer .links2 div{
+	color: #f6f6f6;
+	width: 100%;
+}
+
+footer .links {
+	margin-top: 15px;
+}
+
+footer  .copyright{
+	background-color: #060807;
+	margin-top: 195px;
+	font-weight: 300;
+	font-size: 13px;
+	height: 40px;
+}
+
+
+footer  .copyright h2{
+	font-weight: 300;
+	font-size: 13px;
+	color: #666666;
+}
+
+footer .links3 div{
+	width: 100%;
+	color: #f6f6f6;
+}
+footer .links3 p{
+color: #f6f6f6;	
+}
